@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/Fragment1">
+
+    <fragment
+        android:id="@+id/Fragment1"
+        android:name="com.example.navhost.PageFragment"
+        tools:layout="@layout/fragment_one">
+
+        <argument
+            android:name="pageText"
+            android:defaultValue="Halaman 1"
+            app:argType="string" />
+        <argument
+            android:name="ButtonText"
+            android:defaultValue="Menuju Halaman 2"
+            app:argType="string" />
+        <argument
+            android:name="nextActionId"
+            android:defaultValue="@id/action_h1_to_h2"
+            app:argType="reference" />
+        <action
+            android:id="@+id/action_h1_to_h2"
+            app:destination="@id/Fragment2" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/Fragment2"
+        android:name="com.example.navhost.PageFragment"
+        tools:layout="@layout/fragment_two">
+
+        <argument
+            android:name="pageText"
+            android:defaultValue="Halaman 2"
+            app:argType="string" />
+        <argument
+            android:name="ButtonText"
+            android:defaultValue="Menuju Halaman 3"
+            app:argType="string" />
+        <argument
+            android:name="nextActionId"
+            android:defaultValue="@id/action_h2_to_h3"
+            app:argType="reference" />
+        <action
+            android:id="@+id/action_h2_to_h3"
+            app:destination="@id/Fragment3" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/Fragment3"
+        android:name="com.example.navhost.PageFragment"
+        tools:layout="@layout/fragment_three">
+
+        <argument
+            android:name="pageText"
+            android:defaultValue="Halaman 3"
+            app:argType="string" />
+        <argument
+            android:name="ButtonText"
+            android:defaultValue="Menuju Halaman 4"
+            app:argType="string" />
+        <argument
+            android:name="nextActionId"
+            android:defaultValue="@id/action_h3_to_h4"
+            app:argType="reference" />
+        <action
+            android:id="@+id/action_h3_to_h4"
+            app:destination="@id/Fragment4" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/Fragment4"
+        android:name="com.example.navhost.PageFragment"
+        tools:layout="@layout/fragment_four">
+
+        <argument
+            android:name="pageText"
+            android:defaultValue="Halaman 4"
+            app:argType="string" />
+        <argument
+            android:name="ButtonText"
+            android:defaultValue="Menuju Halaman 5"
+            app:argType="string" />
+        <argument
+            android:name="nextActionId"
+            android:defaultValue="@id/action_h4_to_h5"
+            app:argType="reference" />
+        <action
+            android:id="@+id/action_h4_to_h5"
+            app:destination="@id/Fragment5" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/Fragment5"
+        android:name="com.example.navhost.PageFragment"
+        tools:layout="@layout/fragment_five">
+
+        <argument
+            android:name="pageText"
+            android:defaultValue="Halaman 5"
+            app:argType="string" />
+        <argument
+            android:name="ButtonText"
+            android:defaultValue="Menuju Halaman 6"
+            app:argType="string" />
+        <argument
+            android:name="nextActionId"
+            android:defaultValue="@id/action_h5_to_h6"
+            app:argType="reference" />
+        <action
+            android:id="@+id/action_h5_to_h6"
+            app:destination="@id/Fragment6" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/Fragment6"
+        android:name="com.example.navhost.PageFragment"
+        tools:layout="@layout/fragment_six">
+
+        <argument
+            android:name="pageText"
+            android:defaultValue="Halaman 6"
+            app:argType="string" />
+        <argument
+            android:name="ButtonText"
+            android:defaultValue="Menuju Halaman 7"
+            app:argType="string" />
+        <argument
+            android:name="nextActionId"
+            android:defaultValue="@id/action_h6_to_h7"
+            app:argType="reference" />
+        <action
+            android:id="@+id/action_h6_to_h7"
+            app:destination="@id/Fragment7" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/Fragment7"
+        android:name="com.example.navhost.PageFragment"
+        tools:layout="@layout/fragment_seven">
+
+        <argument
+            android:name="pageText"
+            android:defaultValue="Halaman 7"
+            app:argType="string" />
+        <argument
+            android:name="ButtonText"
+            android:defaultValue="Menuju Halaman 8"
+            app:argType="string" />
+        <argument
+            android:name="nextActionId"
+            android:defaultValue="@id/action_h7_to_h8"
+            app:argType="reference" />
+        <action
+            android:id="@+id/action_h7_to_h8"
+            app:destination="@id/Fragment8" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/Fragment8"
+        android:name="com.example.navhost.PageFragment"
+        tools:layout="@layout/fragment_eight">
+
+        <argument
+            android:name="pageText"
+            android:defaultValue="Halaman 8"
+            app:argType="string" />
+        <argument
+            android:name="ButtonText"
+            android:defaultValue="Menuju Halaman 9"
+            app:argType="string" />
+        <argument
+            android:name="nextActionId"
+            android:defaultValue="@id/action_h8_to_h9"
+            app:argType="reference" />
+        <action
+            android:id="@+id/action_h8_to_h9"
+            app:destination="@id/Fragment9" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/Fragment9"
+        android:name="com.example.navhost.PageFragment"
+        tools:layout="@layout/fragment_one">
+
+        <argument
+            android:name="pageText"
+            android:defaultValue="Halaman 9"
+            app:argType="string" />
+        <argument
+            android:name="ButtonText"
+            android:defaultValue="Menuju Halaman 10"
+            app:argType="string" />
+        <argument
+            android:name="nextActionId"
+            android:defaultValue="@id/action_h9_to_h10"
+            app:argType="reference" />
+        <action
+            android:id="@+id/action_h9_to_h10"
+            app:destination="@id/Fragment10" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/Fragment10"
+        android:name="com.example.navhost.PageFragment"
+        tools:layout="@layout/fragment_one">
+
+        <argument
+            android:name="pageText"
+            android:defaultValue="Halaman 10"
+            app:argType="string" />
+        <argument
+            android:name="ButtonText"
+            android:defaultValue="Menuju Halaman 1"
+            app:argType="string" />
+        <argument
+            android:name="nextActionId"
+            android:defaultValue="@id/action_h10_to_h1"
+            app:argType="reference" />
+        <action
+            android:id="@+id/action_h10_to_h1"
+            app:destination="@id/Fragment1" />
+    </fragment>
+</navigation>
